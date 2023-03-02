@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 02, 2023 at 12:19 PM
+-- Generation Time: Mar 02, 2023 at 11:50 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -207,8 +207,8 @@ CREATE TABLE `mst_location` (
 --
 
 INSERT INTO `mst_location` (`location_id`, `location_nama`, `location_coordinate`, `location_aktif`, `loc_tipe_id`) VALUES
-('12', 'JAKARTA - JOGJA', '1212', 1, 1),
-('13', 'JAKARTA - BALI', '0901', 1, 1);
+('12', 'JAKARTA - JOGJA', '1212', 1, 246156),
+('13', 'JAKARTA - BALI', '0901', 1, 246156);
 
 -- --------------------------------------------------------
 
@@ -227,7 +227,9 @@ CREATE TABLE `mst_location_tipe` (
 --
 
 INSERT INTO `mst_location_tipe` (`loc_tipe_id`, `loc_tipe_nama`, `loc_tipe_aktif`) VALUES
-(1, 'JAKARTA', 1);
+(1, 'AGEN ( PARUNG )', 1),
+(246156, 'TERMINAL ( PONDOK PINANG )', 1),
+(357897, 'TERMINAL ( GIWANGAN JOGJA )', 1);
 
 -- --------------------------------------------------------
 
@@ -367,7 +369,7 @@ ALTER TABLE `mst_crew`
 -- AUTO_INCREMENT for table `mst_location_tipe`
 --
 ALTER TABLE `mst_location_tipe`
-  MODIFY `loc_tipe_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `loc_tipe_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=357898;
 
 --
 -- Constraints for dumped tables
